@@ -119,8 +119,8 @@
     <div class="row">
         <div class="col-md-12 col-sm-12">
             <div class="form-group">
-                <label for="validationTooltip01">رقم التلبفون</label>
-                <input type="text" placeholder="رقم التلبفون" value="{{ old('phonenumber') }}" name="phonenumber" class="form-control" id="validationTooltip01">
+                <label for="validationTooltip01">رقم التليفون</label>
+                <input type="text" placeholder="رقم التليفون" value="{{ old('phonenumber') }}" name="phonenumber" class="form-control" id="validationTooltip01">
                 @error('phonenumber')
                     <span class="text-danger">{{$message}}</span>
                 @enderror
@@ -229,8 +229,8 @@
              @enderror
         </div>
         <div class="col-md-12 mb-3">
-            <label for="validationTooltip01">رقم التلبفون</label>
-            <input type="text" placeholder="رقم التلبفون" value="{{ old('paphonenumber') }}" name="paphonenumber" class="form-control" id="validationTooltip01">
+            <label for="validationTooltip01">رقم التليفون</label>
+            <input type="text" placeholder="رقم التليفون" value="{{ old('paphonenumber') }}" name="paphonenumber" class="form-control" id="validationTooltip01">
             @error('phonenumber')
             <span class="text-danger">{{$message}}</span>
             @enderror
@@ -239,12 +239,12 @@
     <div class="form-row">
         <div class="col-md-12 mb-3">
             <label for="validationTooltip04">الجنس</label>
-            <select class="text-right form-control" name="gender" id="validationTooltip04"  style="text-align: right">
+            <select class="text-right form-control" name="pagender" id="validationTooltip04"  style="text-align: right">
                 <option class="" selected disabled value="" style="text-align: right" >الجنس</option>
                 <option class="" value="1" style="text-align: right">ذكر</option>
                 <option class="" value="2" style="text-align: right">أنثى</option>
             </select>
-            @error('gender')
+            @error('pagender')
             <span class="text-danger">{{$message}}</span>
             @enderror
         </div>

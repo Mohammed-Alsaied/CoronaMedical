@@ -22,12 +22,10 @@
                                         <thead>
                                             <th class="text-center">ID</th>
                                             <th class="text-center">الإسم الكامل</th>
-                                            <th class="text-center">اسم المستخدم</th>
                                             <th class="text-center">البريد الالكتروني</th>
-                                            <th class="text-center">كلمة المرور</th>
                                             <th class="text-center">السن</th>
-                                            <th class="text-center">الطول</th>
-                                            <th class="text-center">الوزن</th>
+                                            <th class="text-center">الطول(سم)</th>
+                                            <th class="text-center">الوزن(كجم)</th>
                                             <th class="text-center">رقم التلبفون</th>
                                             <th class="text-center">الأعراض</th>
                                             <th class="text-center">المرفقات</th>
@@ -40,11 +38,9 @@
                                                     <tr>
                                                         <td class="text-center">{{ $patient->id}}</td>
                                                         <td class="text-center">{{ $patient->fullname}}</td>
-                                                        <td class="text-center">{{ $patient->username}}</td>
                                                         <td class="text-center">{{ $patient->email}}</td>
-                                                        <td class="text-center">{{ $patient->password}}</td>
                                                         <td class="text-center">{{ $patient->age}}</td>
-                                                        <td class="text-center">{{ $patient->length}}</td>
+                                                        <td class="text-center">{{ $patient->Length}}</td>
                                                         <td class="text-center">{{ $patient->weight}}</td>
                                                         <td class="text-center">
                                                             <a href="tel:{{ $patient->phone_number}}" title="إضفط للإتصال ">{{ $patient->phone_number}}</a>

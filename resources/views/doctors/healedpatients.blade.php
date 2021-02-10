@@ -24,8 +24,8 @@
                                             <th class="text-center">الإسم الكامل</th>
                                             <th class="text-center">رقم التلبفون</th>
                                             <th class="text-center">السن</th>
-                                            <th class="text-center">الطول</th>
-                                            <th class="text-center">الوزن</th>
+                                            <th class="text-center">الطول(سم)</th>
+                                            <th class="text-center">الوزن(كجم)</th
                                             <th class="text-center">الأعراض</th>
                                             <th class="text-center">المرفقات</th>
                                         </thead>
@@ -37,7 +37,7 @@
                                                         <td class="text-center">{{ $ill->fullname}}</td>
                                                         <td class="text-center"><a href="tel:{{ $ill->phone_number}}">{{ $ill->phone_number}}</a></td>
                                                         <td class="text-center">{{ $ill->age}}</td>
-                                                        <td class="text-center">{{ $ill->length}}</td>
+                                                        <td class="text-center">{{ $ill->Length}}</td>
                                                         <td class="text-center">{{ $ill->weight}}</td>
                                                         <td class="text-center">{{ $ill->symptoms}}</td>
                                                         <td class="text-center">

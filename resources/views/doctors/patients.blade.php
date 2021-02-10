@@ -21,8 +21,8 @@
                                 <th class="text-center">الإسم الكامل</th>
                                 <th class="text-center">رقم التلبفون</th>
                                 <th class="text-center">السن</th>
-                                <th class="text-center">الطول</th>
-                                <th class="text-center">الوزن</th>
+                                <th class="text-center">الطول(سم)</th>
+                                <th class="text-center">الوزن(كجم)</th
                                 <th class="text-center">الأعراض</th>
                                 <th class="text-center">المرفقات</th>
                                 <th class="text-center">العمليات</th>
@@ -53,7 +53,7 @@
                             </tbody>
                         </table>
                         @else
-                        <div class="alert alert-warning">
+                        <div class="alert alert-info">
                             <h4>لا يوجد بيانات حتي الآن...</h4>
                         </div>
                       @endif

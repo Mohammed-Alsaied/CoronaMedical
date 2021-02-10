@@ -56,8 +56,6 @@
                                                         <td class="text-center"><small>{{ $doctor->years_of_Experience}}</small></td>
                                                         <td class="text-center"><small>{{ $doctor->created_at}}</small></td>
                                                         <td class="text-center"><small>{{ $doctor->updated_at}}</small></td>
-
-
                                                         <td class="text-center"><small><a href="{{Route('delete.doctors',$doctor->id)}}" class="btn btn-danger btn-sm">حذف</a></small></td>
                                                     </tr>
                                             @endforeach
@@ -65,7 +63,7 @@
                                     </table>
                                     @else
 
-                                      <div class="alert alert-warning alert-dismissible fade show text-right"">
+                                      <div class="alert alert-info>
                                           <h4>لا يوجد بيانات حتي الآن...</h4>
                                       </div>
                                     @endif

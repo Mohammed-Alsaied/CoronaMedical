@@ -25,10 +25,11 @@
                                             <th class="text-center">الإسم</th>
                                             <th class="text-center">رقم التلبفون</th>
                                             <th class="text-center">السن</th>
-                                            <th class="text-center">الطول</th>
-                                            <th class="text-center">الوزن</th>
+                                            <th class="text-center">الطول(سم)</th>
+                                            <th class="text-center">الوزن(كجم)</th
                                             <th class="text-center">الأعراض</th>
                                             <th class="text-center">المرفقات</th>
+                                            <th class="text-center">وقت الشفاء</th>
                                             <th class="text-center">العمليات</th>
                                         </thead>
                                         <tbody>
@@ -50,6 +51,7 @@
                                                                 <a href="/uploaded/images/{{ $healedpatient->uploaded}}" target="blank" title="اضفط للمشاهده">{{ $healedpatient->uploaded}}</a>
                                                             @endif
                                                         </td>
+                                                        <td class="text-center">{{ $healedpatient->created_at}}</td>
                                                          <td class="text-center"><a href="{{Route('delete.healedpatients',$healedpatient->id)}}" class="btn btn-warning btn-sm">حذف</a></td>
                                                     </tr>
                                             @endforeach

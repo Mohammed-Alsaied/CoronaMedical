@@ -158,7 +158,7 @@ class DoctorController extends Controller
             $email = $request->email;
             $pass = $request->pass;
 
-        $login =  Doctor::select('email','password','username','id','phone_number','number_of_donated_hour','hospita_name')
+        $login =  Doctor::select('email','password','username','id')
                         ->where('email',$email)
                         ->where('password',$pass)
                         ->orWhere('username',$email)
@@ -168,19 +168,7 @@ class DoctorController extends Controller
                             foreach($login as $log){
                                 $request->Session()->put('username',$log->username);
                                 $request->Session()->put('id',$log->id);
-                                $request->Session()->put('email',$log->email );
-                                $request->Session()->put('password',$log->password );
-                                $request->Session()->put('phone_number',$log->phone_number );
-                                $request->Session()->put('number_of_donated_hour',$log->number_of_donated_hour );
-                                $request->Session()->put('hospita_name',$log->hospita_name );
-
-                                /*if (Session()->has('id')){
-                                    Addpatient::create([
-                                        'doctor_id' => Session()->get('id')
-
-                                    ]);
-                                }*/
-                                return redirect()->route('ddashboard');
+                                return redirect()->Route('ddashboard');
                             }
                         }else{
                             return redirect()->back()->with('failed','فشل تسجيل الدخول خطأ في ادخال البيانات ');

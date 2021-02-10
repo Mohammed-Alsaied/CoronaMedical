@@ -9,7 +9,7 @@
         <div class="sidebar-wrapper" id="sidebar">
             <div class="logo">
                 <a href="{{Route('home')}}" class="simple-text">
-                    ميديكال - Medical
+          كورونا ميديكال - Corona Medical
                 </a>
             </div>
 

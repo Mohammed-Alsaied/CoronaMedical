@@ -124,9 +124,7 @@ class AdminController extends Controller
                         foreach($login as $log){
                             $request->Session()->put('userName',$log->username);
                             $request->Session()->put('id',$log->id);
-                            $request->Session()->put('email',$log->email);
-                            $request->Session()->put('password',$log->password);
-                            return redirect()->route('aadashboard');
+                            return redirect()->Route('aadashboard');
                         }
                     }else{
                         return redirect()->back()->with('failed','.فشل تسجيل الدخول خطأ في ادخال البيانات');

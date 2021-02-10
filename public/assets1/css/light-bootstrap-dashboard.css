@@ -254,7 +254,7 @@ input:focus {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .sidebar .logo .simple-text {
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 5px 0px;
   display: block;
   font-size: 18px;
@@ -326,10 +326,10 @@ body > .navbar-collapse .logo p {
 }
 .sidebar .logo .simple-text,
 body > .navbar-collapse .logo .simple-text {
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 5px 0px;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   color: #FFFFFF;
   text-align: center;
   font-weight: 400;

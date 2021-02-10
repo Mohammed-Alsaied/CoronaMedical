@@ -25,7 +25,7 @@
     <link href="{{asset('assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
     <link href="{{asset('assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
-    <!-- Template Main CSS File -->
+    <!--  Main CSS File -->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
     </head>
 <body>

@@ -1,14 +1,14 @@
 
  @extends('layout.master')
- @section('title','Medical - ميديكال')
+ @section('title','Corona Medical -  كورونا ميديكال')
  @section('content')
 
 
  <!-- ======= Hero Section ======= -->
  <section id="hero" class="d-flex align-items-center">
      <div class="container" id="home">
-         <h1 dir="auto">مرحبا بكم في ميديكال - Medical</h1>
-         <h3 dir="auto">بنينا هذا الموقع لرعايتكم والإطمئنان على صحتكم</h3>
+         <h1 dir="auto" class:"text-small">مرحبا بكم في كورونا ميديكال - Corona Medical</h1>
+         <h2 dir="auto">بنينا هذا الموقع لرعايتكم والإطمئنان على صحتكم</h2>
          <a dir="auto" href="#about" class="btn-get-started scrollto">إبدا</a>
      </div>
  </section><!-- End Hero -->
@@ -34,19 +34,19 @@
 
                      <div class="icon-box">
                          <div class="icon"><i class="bx bx-globe"></i></div>
-                         <h4 dir="auto" class="title text-right"><a href="#">ميديكال - Medical </a></h4>
+                         <h4 dir="auto" class="title text-right"><span> كورونا ميديكال - Corona Medical</span></h4>
                          <p dir="auto" class="description">موقع إلكتروني وسيط بين أطباء ومرضى.</p>
                      </div>
 
                      <div class="icon-box">
                          <div dir="auto" class="icon"><i class="bx bxs-donate-heart"></i></div>
-                         <h4  dir="auto" class="title text-right"><a href="#">أطباء الخير</a></h4>
+                         <h4 dir="auto" class="title text-right"><span="#">أطباء الخير</span></h4>
                          <p  dir="auto"class="description">طبيب يمد يد العون للمريض.</p>
                      </div>
 
                      <div class="icon-box">
                          <div dir="auto" class="icon"><i class="bx bx-plus-medical"></i></div>
-                         <h4 dir="auto" class="title text-right"><a href="#">مريض</a></h4>
+                         <h4 dir="auto" class="title text-right"><span="#">مريض</span></h4>
                          <p dir="auto" class="description">مرضى تمد لهم يد العون حتي تمام الشفاء.</p>
                      </div>
 
@@ -213,7 +213,7 @@
                          <div class="email" id="em">
                              <i class="icofont-envelope"></i>
                              <h4 class="text-right">البريد الإلكتروني:</h4>
-                             <p class="text-right">mohamed.saied.civil@gmail.com</p>
+                             <p class="text-right">info@getcoronamedical.com</p>
                          </div>
                      </div>
 

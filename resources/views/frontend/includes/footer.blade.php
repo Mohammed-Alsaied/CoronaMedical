@@ -5,13 +5,12 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-contact">
-                    <h3 dir="auto">ميديكال - Medical</h3>
+                    <h3 dir="auto"> كورونا ميديكال - Corona Medical</h3>
                 </div>
                     <nav class=" col-lg-2 col-md-6 footer-links" id="a">
                         <ul>
-                            <li><i class="bx bx-chevron-left"></i> <a href="#home" dir="auto">الصفحه الرئيسية</a></li>
-                            <li><i class="bx bx-chevron-left"></i> <a href="#about" dir="auto">عن الموقع</a></li>
-                            <li><i class="bx bx-chevron-left"></i> <a href="#contact" dir="auto">تواصل معنا</a></li>
+                            <li><i class="bx bx-chevron-left"></i> <a href="{{Route('home')}}" dir="auto">الصفحه الرئيسية</a></li>
+                            
                         </ul>
                     </nav>
             </div>
@@ -22,7 +21,7 @@
 
         <div class="mr-md-auto text-center text-md-left">
             <div class="copyright">
-                &copy; Copyright <strong><span dir="auto">Medical</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span dir="auto">Corona Medical</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
 

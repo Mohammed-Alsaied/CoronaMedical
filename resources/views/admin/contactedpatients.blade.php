@@ -25,12 +25,13 @@
                                             <th class="text-center">الإسم</th>
                                             <th class="text-center">رقم التلبفون</th>
                                             <th class="text-center">السن</th>
-                                            <th class="text-center">الطول</th>
-                                            <th class="text-center">الوزن</th>
+                                            <th class="text-center">الطول(سم)</th>
+                                            <th class="text-center">الوزن(كجم)</th
                                             <th class="text-center">الأعراض</th>
                                             <th class="text-center">المرفقات</th>
+                                            <th class="text-center">وقت الإنشاء</th>
+                                            <th class="text-center">وقت التعديل</th>
                                             <th class="text-center">العمليات</th>
-
                                         </thead>
                                         <tbody>
                                             @foreach ($contactedpatients as $contactedpatient)
@@ -51,7 +52,9 @@
                                                                 <a href="/uploaded/images/{{ $contactedpatient->uploaded}}" target="blank" title="اضفط للمشاهده">{{ $contactedpatient->uploaded}}</a>
                                                             @endif
                                                         </td>
-                                                         <td class="text-center"><a href="{{Route('delete.contactedpatients',$contactedpatient->id)}}" class="btn btn-warning btn-sm">حذف</a></td>
+                                                        <td class="text-center">{{ $contactedpatient->crated_at}}</td>
+                                                        <td class="text-center">{{ $contactedpatient->updated_at}}</td>
+                                                        <td class="text-center"><a href="{{Route('delete.contactedpatients',$contactedpatient->id)}}" class="btn btn-warning btn-sm">حذف</a></td>
                                                     </tr>
                                             @endforeach
                                         </tbody>

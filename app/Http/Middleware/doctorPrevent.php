@@ -17,7 +17,7 @@ class doctorPrevent
     {
         if(!Session()->get('id')){
 
-            return redirect('/medical/signin');
+            return redirect('/coronamedical/signin');
         }
         return $next($request);
     }

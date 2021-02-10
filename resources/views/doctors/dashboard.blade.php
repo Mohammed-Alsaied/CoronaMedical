@@ -17,7 +17,7 @@
                   <!-- small box -->
                   <div class="small-box bg-danger">
                     <div class="inner">
-                      <h3>{{ App\Models\patient::where('IsActive',false)->count() }}</h3>
+                      <h3>{{ App\Models\Patient::where('IsActive',false)->count() }}</h3>
 
                       <h4>مريض</h4>
                     </div>

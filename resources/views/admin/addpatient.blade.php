@@ -23,36 +23,39 @@
                                         </div>
                                      @endif
                                         <thead>
-                                            <th>ID</th>
-                                            <th>الإسم</th>
-                                            <th>رقم التلبفون</th>
-                                            <th>السن</th>
-                                            <th>الطول</th>
-                                            <th>الوزن</th>
-                                            <th>الأعراض</th>
-                                            <th>المرفقات</th>
+                                            <th class="text-center">ID</th>
+                                            <th class="text-center">الإسم</th>
+                                            <th class="text-center">رقم التلبفون</th>
+                                            <th class="text-center">السن</th>
+                                            <th class="text-center">الطول(سم)</th>
+                                            <th class="text-center">الوزن(كجم)</th
+                                            <th class="text-center">الأعراض</th>
+                                            <th class="text-center">المرفقات</th>
+                                            <th class="text-center">وقت الإنشاء</th>
+                                            <th class="text-center">وقت التعديل</th>
                                             <th class="text-center">العمليات</th>
-
                                         </thead>
                                         <tbody>
                                             @foreach ($addminaddpatients as $addminaddpatient)
                                                     <tr>
-                                                        <td>{{ $addminaddpatient->id}}</td>
-                                                        <td>{{ $addminaddpatient->fullname}}</td>
-                                                        <td>
+                                                        <td class="text-center">{{ $addminaddpatient->id}}</td>
+                                                        <td class="text-center">{{ $addminaddpatient->fullname}}</td>
+                                                        <td class="text-center">
                                                             <a href="tel:{{ $addminaddpatient->phone_number}}" title="إضفط للإتصال ">{{ $addminaddpatient->phone_number}}</a>
                                                         </td>
-                                                        <td>{{ $addminaddpatient->age}}</td>
-                                                        <td>{{ $addminaddpatient->Length}}</td>
-                                                        <td>{{ $addminaddpatient->weight}}</td>
-                                                        <td>{{ $addminaddpatient->symptoms}}</td>
-                                                        <td>
+                                                        <td class="text-center">{{ $addminaddpatient->age}}</td>
+                                                        <td class="text-center">{{ $addminaddpatient->Length}}</td>
+                                                        <td class="text-center">{{ $addminaddpatient->weight}}</td>
+                                                        <td class="text-center">{{ $addminaddpatient->symptoms}}</td>
+                                                        <td class="text-center">
                                                             @if ($addminaddpatient->uploaded ==NULL)
                                                                 <span>لا يوجد مرفقات</span>
                                                                 @else
                                                                 <a href="/uploaded/images/{{ $addminaddpatient->uploaded}}" target="blank" title="اضفط للمشاهده">{{ $addminaddpatient->uploaded}}</a>
                                                             @endif
                                                         </td>
+                                                        <td class="text-center">{{ $addminaddpatient->created_at}}</td>
+                                                        <td class="text-center">{{ $addminaddpatient->updated_at}}</td>
                                                         <td class="text-center"><a href="{{Route('delete.adminaddpatient',$addminaddpatient->id)}}" class="btn btn-warning btn-sm">حذف</a></td>
                                                     </tr>
                                             @endforeach

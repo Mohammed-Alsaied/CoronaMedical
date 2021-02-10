@@ -8,5 +8,4 @@
    @yield('content')
   <!-- Footer -->
  @include('frontend.includes.footer')
-  <!-- Bootstrap core JavaScript -->
 

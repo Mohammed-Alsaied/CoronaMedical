@@ -39,7 +39,7 @@ class PatientController extends Controller
                 'length' => 'required|numeric',
                 'weight' => 'required|numeric',
                 'paphonenumber' => 'required',
-                'gender' =>'required',
+                'pagender' =>'required',
                 'symptoms' => 'required'
 
 
@@ -59,7 +59,7 @@ class PatientController extends Controller
                 'paphonenumber.required' => 'هذا الحقل مطلوب',
                 'paphonenumber.numeric' => ' هذا الحقل ارقام فقط',
                 'symptoms.required' => 'هذا الحقل مطلوب',
-                'gender.required' => 'هذا الحقل مطلوب',
+                'pagender.required' => 'هذا الحقل مطلوب',
         ]
     );
 

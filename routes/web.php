@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 
     /*================================= Begin Site Routes ====================================== */
+    Route::get('/','FrontEnd\SiteController@index')->name('home');
 
-Route::group(['prefix' => 'medical'], function () {
+Route::group(['prefix' => 'coronamedical'], function () {
 
     Route::get('/','FrontEnd\SiteController@index')->name('home');
 
